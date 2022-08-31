@@ -199,6 +199,10 @@
         this.tip.remove();
       }
 
+      if (this._config.originalTitle) {
+        this._element.setAttribute('title', this._config.originalTitle);
+      }
+
       this._disposePopper();
 
       super.dispose();
